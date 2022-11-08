@@ -1,0 +1,26 @@
+{
+  "name": "sec_bootcamp_week4",
+  "version": "1.0.0",
+  "description": "Twitter Clone",
+  "main": "server.js",
+  "scripts": {
+    "run": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeonHeo23/SEC_bootcamp_week4.git"
+  },
+  "author": "Heon Heo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeonHeo23/SEC_bootcamp_week4/issues"
+  },
+  "homepage": "https://github.com/HeonHeo23/SEC_bootcamp_week4#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
