@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+}
+
+.page-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 250px;
+}
+.left {
+  flex: 1;
+  padding: 10px 20px;
+}
+.logo img {
+  width: 50px;
+}
+.menu {
+  display: grid;
+  gap: 5px;
+}
+.menu-button {
+  padding: 10px 50px;
+  border-radius: 50px;
+  transition: 100ms;
+  cursor: pointer;
+}
+.menu-button:hover {
+  background: #DDD;
+}
+
+.middle {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.create-tweet {
+  display: flex;
+  height: 200px;
+}
+.profile-img-user img {
+  width: 50px;
+  border-radius: 25px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex: 1;
+}
+.form input, .form textarea {
+  width: 100%;
+  font-size: 18px;
+  border: 0;
+  border-bottom: rgb(48, 130, 253) solid 1px;
+  outline: 0;
+}
+.form textarea {
+  height: 100px;
+  resize: none;
+}
+.form button {
+  width: 100px;
+  background: rgb(48, 130, 253);
+  border: 0;
+  padding: 12px;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.tweet-container {
+  display: flex;
+}
+.profile-img img {
+  width: 40px;
+  border-radius: 20px;
+}
+.tweet {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+}
+.search {
+}
+.search input {
+  width: 100%;
+  background-color: #CCC;
+  border: 0;
+  height: 40px;
+  outline: 0;
+  padding: 10px;
+}
