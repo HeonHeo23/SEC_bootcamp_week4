@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body {
   font-size: 18px;
@@ -17,7 +18,7 @@ body {
   padding: 10px 20px;
 }
 .logo img {
-  width: 50px;
+  width: 40px;
 }
 .menu {
   display: grid;
@@ -39,10 +40,13 @@ body {
   flex-direction: column;
 }
 .create-tweet {
+  padding: 20px 10px;
   display: flex;
-  height: 200px;
+  height: 240px;
+  border: #CCC 1px solid;
 }
 .profile-img-user img {
+  margin-right: 10px;
   width: 50px;
   border-radius: 25px;
 }
@@ -74,19 +78,31 @@ body {
   cursor: pointer;
 }
 
+.tweet-feed {
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+}
 .tweet-container {
+  padding: 10px;
   display: flex;
+  border: 1px #CCC solid;
 }
 .profile-img img {
+  margin-right: 10px;
   width: 40px;
   border-radius: 20px;
 }
 .tweet {
   flex: 1;
 }
+.tweet-username {
+  font-weight: 700;
+}
 
 .right {
   flex: 1;
+  padding: 10px 20px;
 }
 .search {
 }
@@ -96,5 +112,9 @@ body {
   border: 0;
   height: 40px;
   outline: 0;
-  padding: 10px;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+.trend {
+  margin-top: 10px;
 }

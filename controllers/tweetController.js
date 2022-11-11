@@ -7,7 +7,6 @@ const getAllTweets = async (req, res) => {
 }
 
 const createTweet = async (req, res) => {
-  console.log(req);
   if (!req?.body?.username || !req?.body?.text) return res.status(400).json({ 'message': 'Username and text required.' });
   try {
     const result = await Tweet.create({
