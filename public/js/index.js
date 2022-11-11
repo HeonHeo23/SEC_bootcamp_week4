@@ -10,7 +10,11 @@ const init = () => {
     try {
       const username = document.getElementById('username').value;
       const text = document.getElementById('text').value;
-      const response = postTweet(username, text);
+      if (!username || !text) {
+        alert('Username and text are required.');
+      } else {
+        const response = postTweet(username, text);
+      }
     } catch (err) {
       console.error(err);
     } finally {
@@ -33,9 +37,9 @@ const loadFeed = async () => {
     return;
   }
 
-  tweets = await response.json();
+  const tweets = await response.json();
   let feed = '';
-  for (let i = 0; i < tweets.length; i++) {
+  for (let i = tweets.length - 1; i >= 0; i--) {
     feed += `
     <div class="tweet-container">
       <div class="profile-img">
