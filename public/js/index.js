@@ -20,7 +20,7 @@ const init = () => {
 }
 
 const loadFeed = async () => {
-  const url = 'http://localhost:3500/tweet';
+  const url = '/tweet';
   const response = await fetch(url, {
     method: "GET",
     headers: {
@@ -52,7 +52,7 @@ const loadFeed = async () => {
 }
 
 const postTweet = async (username, text) => {
-  const url = 'http://localhost:3500/tweet';
+  const url = '/tweet';
 
   const tweet = {
     username: username,
